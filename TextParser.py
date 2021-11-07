@@ -1,6 +1,5 @@
 from os.path import exists
 
-
 def parse_character(read_path, name, force=False):
     file_path = "./" + name + ".txt"
     read_path = "./" + read_path + ".txt"
@@ -15,7 +14,7 @@ def parse_character(read_path, name, force=False):
         is_char = False
         for i in reader:
             if len(i.split()) == 1:
-                if i.strip() == name.upper():
+                if i.strip().upper() == name.upper():
                     is_char = True
                 elif i.strip() == i.strip().upper():
                     is_char = False
@@ -23,13 +22,18 @@ def parse_character(read_path, name, force=False):
                 continue
 
             if is_char:
-                lines += i.strip().strip(",") + " "
+                lines += i.strip() + " "
 
     formatted = ""
 
-    for i in lines.split(" "):
-        if not(i == i.upper or i == '\t'):
-            formatted += i + " "
+    for i in lines.split():
+        if i.isdigit():
+            continue
+
+        formatted += i.strip().strip(',():;"\'’-�').replace("�", '').replace("'", '').replace("-", '').replace("\u00e2\u20ac\u201d", '').replace("’", '').replace("\u00e2\u20ac\u2122", "").replace("\u00c3\u00a8", '').replace("\u00c3\u00a8", '').replace("\u00c3", '').lower() + " "
+
+    # formatted = formatted.strip()
+    # formatted += '.'
 
     with open(file_path, "w") as writer:
         writer.write(formatted)
