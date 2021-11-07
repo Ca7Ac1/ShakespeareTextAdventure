@@ -9,7 +9,8 @@
 #include "StoryElement.hpp"
 #include "File.hpp"
 
-const int kSleepTime = 5;
+const int kSleepTime = 10;
+const int kLineSleepTime = 30;
 
 const std::string kFolderPath = "Story/";
 const std::string kFileExtension = ".txt";
@@ -22,6 +23,7 @@ StoryElement::StoryElement(std::string curr) : curr(curr), end(false)
 
 void StoryElement::parseCurr()
 {
+    std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
     if (curr == "END_ALL")
     {
         end = true;
@@ -97,8 +99,15 @@ void StoryElement::printLine(std::string next)
 {
     for (char i : next)
     {
+        if (i == '\n')
+        {
+            std::this_thread::sleep_for(std::chrono::milliseconds(kLineSleepTime));
+        }
+        else
+        {
+            std::this_thread::sleep_for(std::chrono::milliseconds(kSleepTime));
+        }
         std::cout << i;
-        std::this_thread::sleep_for(std::chrono::milliseconds(kSleepTime));
     }
 
     std::cout << '\n';
