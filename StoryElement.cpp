@@ -17,6 +17,7 @@ const std::string kFileExtension = ".txt";
 
 StoryElement::StoryElement(std::string curr) : curr(curr), end(false)
 {
+    std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
     srand(time(NULL));
     parseCurr();
 }
