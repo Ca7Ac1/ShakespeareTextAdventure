@@ -4,26 +4,25 @@
 #include <string>
 #include <chrono>
 #include <thread>
+#include <time.h>
 
 #include "StoryElement.hpp"
 #include "File.hpp"
 
 const int kSleepTime = 5;
 
-const std::string kFolderPath = "./Story/";
+const std::string kFolderPath = "Story/";
+const std::string kFileExtension = ".txt";
 
-StoryElement::StoryElement(char curr) : curr(curr)
+StoryElement::StoryElement(std::string curr) : curr(curr)
 {
+    srand(time(NULL));
     parseCurr();
 }
 
 void StoryElement::parseCurr()
 {
-    std::string path(1, curr);
-    path = kFolderPath + path;
-    path += ".txt";
-
-    FileReader reader(path);
+    FileReader reader(kFolderPath + curr + kFileExtension);
 
     std::string line;
 
@@ -41,7 +40,7 @@ void StoryElement::parseCurr()
                 line = reader.readNext();
             }
         }
-        else if (line == "PRINT LINES")
+        else if (line == "PRINT_LINES")
         {
             line = reader.readLine();
 
@@ -50,6 +49,19 @@ void StoryElement::parseCurr()
                 printLine(line);
                 line = reader.readLine();
             }
+        }
+        else if (line == "PRINT_RANDOM")
+        {
+            line = reader.readLine();
+            std::vector<std::string> randOptions;
+
+            while (line != "END_PRINT_RANDOM")
+            {
+                randOptions.push_back(line);
+                line = reader.readLine();
+            }
+
+            printLine(randOptions[rand() % randOptions.size()]);
         }
     } 
 }

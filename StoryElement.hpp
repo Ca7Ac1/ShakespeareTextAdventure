@@ -7,17 +7,18 @@
 
 const extern int kSleepTime;
 const extern std::string kFolderPath;
+const extern std::string kFileExtension;
 
 class StoryElement
 {
-    char curr;
-    std::map<int, char> choices;
+    std::string curr;
+    std::map<int, std::string> choices;
 
     void parseCurr();
     void printLine(std::string text);
 
 public:
-    StoryElement(char curr);
+    StoryElement(std::string);
     void choose(int option);
 };
 
