@@ -9,7 +9,7 @@
 #include "StoryElement.hpp"
 #include "File.hpp"
 
-const int kSleepTime = 30;
+const int kSleepTime = 25;
 const int kLineSleepTime = 300;
 
 const std::string kFolderPath = "Story/";
@@ -101,18 +101,18 @@ void StoryElement::printLine(std::string next)
 {
     for (char i : next)
     {
-        if (i == '\n')
+        std::cout << i;
+
+        if (i == '\n'|| i == '?' || i == '.' || i == '!')
         {
             std::this_thread::sleep_for(std::chrono::milliseconds(kLineSleepTime));
         }
         else
         {
             std::this_thread::sleep_for(std::chrono::milliseconds(kSleepTime));
-        }
-
-        std::cout << i;
+        }     
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(kLineSleepTime));
     std::cout << '\n' << '\n';
+    std::this_thread::sleep_for(std::chrono::milliseconds(kLineSleepTime)); 
 }
