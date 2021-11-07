@@ -14,7 +14,7 @@ const int kSleepTime = 5;
 const std::string kFolderPath = "Story/";
 const std::string kFileExtension = ".txt";
 
-StoryElement::StoryElement(std::string curr) : curr(curr)
+StoryElement::StoryElement(std::string curr) : curr(curr), end(false)
 {
     srand(time(NULL));
     parseCurr();
@@ -22,6 +22,12 @@ StoryElement::StoryElement(std::string curr) : curr(curr)
 
 void StoryElement::parseCurr()
 {
+    if (curr == "END_ALL")
+    {
+        end = true;
+        return;
+    }
+
     FileReader reader(kFolderPath + curr + kFileExtension);
 
     std::string line;
@@ -69,7 +75,12 @@ void StoryElement::parseCurr()
 void StoryElement::choose(int option)
 {
     curr = choices[option];
-    parseCurr;
+    parseCurr();
+}
+
+bool StoryElement::isFinished()
+{
+    return end;
 }
 
 void StoryElement::printLine(std::string next)
