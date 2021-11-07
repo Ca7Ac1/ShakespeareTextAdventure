@@ -114,5 +114,5 @@ void StoryElement::printLine(std::string next)
     }
 
     std::this_thread::sleep_for(std::chrono::milliseconds(kLineSleepTime));
-    std::cout << '\n\n';
+    std::cout << '\n' << '\n';
 }
