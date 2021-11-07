@@ -42,7 +42,7 @@ void StoryElement::parseCurr()
 
             while (line != "END_OPTIONS")
             {
-                choices[std::stoi(line)] = reader.readNext()[0];
+                choices[std::stoi(line)] = reader.readNext();
                 line = reader.readNext();
             }
         }
@@ -69,13 +69,23 @@ void StoryElement::parseCurr()
 
             printLine(randOptions[rand() % randOptions.size()]);
         }
-    } 
+    }
 }
 
 void StoryElement::choose(int option)
 {
-    curr = choices[option];
-    parseCurr();
+    if (choices.find(option) != choices.end())
+    {
+        curr = choices[option];
+        parseCurr();
+    }
+    else
+    {
+        std::cout << "\n\nINVALID INPUT PLEASE TRY AGAIN\n\n";
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        parseCurr();
+    }
 }
 
 bool StoryElement::isFinished()
