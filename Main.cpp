@@ -4,7 +4,7 @@
 
 int main()
 {
-    StoryElement story("Start");
+    StoryElement story("start");
 
     while (!story.isFinished())
     {
