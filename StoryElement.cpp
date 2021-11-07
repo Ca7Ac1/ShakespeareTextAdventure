@@ -10,7 +10,7 @@
 #include "File.hpp"
 
 const int kSleepTime = 10;
-const int kLineSleepTime = 30;
+const int kLineSleepTime = 100;
 
 const std::string kFolderPath = "Story/";
 const std::string kFileExtension = ".txt";
@@ -23,7 +23,6 @@ StoryElement::StoryElement(std::string curr) : curr(curr), end(false)
 
 void StoryElement::parseCurr()
 {
-    std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
     if (curr == "END_ALL")
     {
         end = true;
@@ -76,6 +75,8 @@ void StoryElement::parseCurr()
 
 void StoryElement::choose(int option)
 {
+    std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+
     if (choices.find(option) != choices.end())
     {
         curr = choices[option];
@@ -107,8 +108,10 @@ void StoryElement::printLine(std::string next)
         {
             std::this_thread::sleep_for(std::chrono::milliseconds(kSleepTime));
         }
+
         std::cout << i;
     }
 
+    std::this_thread::sleep_for(std::chrono::milliseconds(kLineSleepTime));
     std::cout << '\n';
 }
