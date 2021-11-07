@@ -31,4 +31,9 @@
 *.out
 *.app
 
+# Vscode file
+.vscode
+
+# Run specific files
 *.txt
+!story/*.txt
