@@ -9,8 +9,8 @@
 #include "StoryElement.hpp"
 #include "File.hpp"
 
-const int kSleepTime = 10;
-const int kLineSleepTime = 100;
+const int kSleepTime = 30;
+const int kLineSleepTime = 300;
 
 const std::string kFolderPath = "Story/";
 const std::string kFileExtension = ".txt";
