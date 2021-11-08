@@ -10,7 +10,7 @@ END_PRINT
 
 PRINT_RANDOM
     "Mother, what illness has befallen you which makes you lose all your empathy. O God, a beast that wants discourse of reason would have mourned longer!"
-    "Cladius, yes you are my father’s brother. Yet, you are no more like my father than I to Hercules."
+    "Cladius, yes you are my father's brother. Yet, you are no more like my father than I to Hercules."
 END_PRINT_RANDOM
 
 PRINT_LINES    

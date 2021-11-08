@@ -10,7 +10,7 @@ END_PRINT
 
 PRINT_RANDOM
     "O, my prophetic soul! My uncle! That villain. How could he commit such a venemous act."
-    "Ay, thou poor ghost, whiles memory holds a seat. Remember thee? Yea, from the table of my memory i’ll wipe away all trivial, fond records and thy commandment all alone shall live"
+    "Ay, thou poor ghost, whiles memory holds a seat. Remember thee? Yea, from the table of my memory i'll wipe away all trivial, fond records and thy commandment all alone shall live"
     "So, uncle, there you are. Now to my word. It is adieu, adieu, remember me. I have sworn't."
 END_PRINT_RANDOM
 
