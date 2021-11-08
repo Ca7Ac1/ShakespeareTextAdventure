@@ -1,0 +1,26 @@
+OPTIONS
+    1 prison
+    2 prison
+    3 prison
+    4 joke_death
+END_OPTIONS
+
+PRINT_LINES
+    Hamlet, eager to see where your guidance would lead him, made himself enraged. He swung his sword ferociously, spinning like a deadly beyblade. The ghost was frightened away, and disapeared through the walls.
+    Alas, in his vigorous rage, Hamlet could not see friend from foe. While the ghost left unharmed, a knight had been struck down. 
+    You don't have to worry much. He was just an unamed side character. Unfortunately, Hamlet would have to worry, as this would mean lead to him being imprisoned.
+END_PRINT
+
+PRINT_RANDOM
+    "Aha, begone you foul lifeless being. What is with the bleakness of you all? Why are you soldiers not complemeting me on my graceful display of skill?"
+    "My sword has missed it's target, but know this. It was divine will for this to happen."
+    "Have I slain the wrong foe? Quick, I must seek forgiveness so my soul will not be tainted."
+END_PRINT_RANDOM
+
+PRINT_LINES    
+
+    1. Run away from the kingdom
+    2. Continue swinging wildly
+    3. Pray to atone for his sins
+    4. Stab himself
+END_PRINT

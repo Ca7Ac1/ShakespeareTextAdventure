@@ -1,0 +1,22 @@
+OPTIONS
+    1 give_up
+    2 give_up
+    3 first_encounter
+END_OPTIONS
+
+PRINT_LINES
+    The ghost draws Hamlet away from the others. As the earth rumbles, the ghost reveals a cruel secret. Cladius, Hamlet's uncle murdered Hamlet's father and married his mother to gain the crown. 
+END_PRINT
+
+PRINT_RANDOM
+    "O, my prophetic soul! My uncle! That villain. How could he commit such a venemous act."
+    "Ay, thou poor ghost, whiles memory holds a seat. Remember thee? Yea, from the table of my memory i’ll wipe away all trivial, fond records and thy commandment all alone shall live"
+    "So, uncle, there you are. Now to my word. It is adieu, adieu, remember me. I have sworn't."
+END_PRINT_RANDOM
+
+PRINT_LINES    
+
+    1. Further question the ghosts intentions
+    2. Question his own sanity
+    3. Listen to the ghosts and avenge his father
+END_PRINT

@@ -1,0 +1,24 @@
+OPTIONS
+    1 start
+    2 END_ALL
+END_OPTIONS
+
+PRINT_LINES
+    As soon as Hamlet's blade reached Cladius's throat, Denmark had fallen.
+    To all but Hamlet, a crazed prince killed his uncle, and a king, for no reason.
+    To Hamlet, his father had been avenged and an evil had been ridden from the world
+END_PRINT
+
+PRINT_RANDOM
+    "The incestuous and vile worm who plagued my life and this kingdom has been vanquished. Now, we shall prosper."
+    "Let us rejoice. I, Hamlet, the true king of this land have saved us from the pestilence of Cladius' rule."
+    "I know your soul shall be damned. I've made my father proud, and will lead this kingdon righteously."
+END_PRINT_RANDOM
+
+PRINT_LINES    
+    Hamlet had lost all humanity. While we all wish this could lead to a happy ending, it won't. Denmark will fall in the struggle.
+    Now it's just up to you. Do you wish to leave this world without any humanity or hope? Who can even say if either of those ideals will make things better?
+
+    1. Restart the game
+    2. Finish the game
+END_PRINT

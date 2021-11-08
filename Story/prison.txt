@@ -1,0 +1,30 @@
+OPTIONS
+    1 start
+    2 END_ALL
+END_OPTIONS
+
+PRINT_LINES
+    Alas, in the end, Hamlet was still captured, and thrown in the dungeon after deemed to be crazy.
+END_PRINT
+
+PRINT_RANDOM
+    "Oh, if only that divine voice hadn't compelled me so. I realize now it only beget my own destruction."
+    "I was so obviously foolish to blindly listen. I thought it was a divine voice, but I see now that could be no further from the truth."
+    "O curse thee who spoke to me so. Thou art an accursed being, and I hope a punishment worse than my fate shall be wrought upon thee."
+END_PRINT_RANDOM
+
+PRINT_LINES
+    Well, that didn't as well as it could have. Due to Hamlet's carelessness, and maybe also you, although I firmly believe Hamlet's criticisms of you are totally unfair, it seems Hamlet has ended up unaware of the mysteries of this world.
+    However, you can still find out about the mysteries of this world, or not. Why don't you choose?
+
+    1. Restart the game
+    2. Finish the game
+END_PRINT
+
+PRINT_LINES    
+
+    1. Run away from the kingdom
+    2. Continue swinging wildly
+    3. Pray to atone for his sins
+    4. Stab himself
+END_PRINT

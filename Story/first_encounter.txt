@@ -1,0 +1,21 @@
+OPTIONS
+    1 decisive
+    2 decisions
+    3 give_up
+END_OPTIONS
+
+PRINT_LINES
+    As a ceremony between Cladius, the king and the previous kings brother, and Gertrude, Hamlet's mom who married her husbands brother, comenced, Hamlet entered
+END_PRINT
+
+PRINT_RANDOM
+    "Mother, what illness has befallen you which makes you lose all your empathy. O God, a beast that wants discourse of reason would have mourned longer!"
+    "Cladius, yes you are my father’s brother. Yet, you are no more like my father than I to Hercules."
+END_PRINT_RANDOM
+
+PRINT_LINES    
+
+    1. Kill Cladius
+    2. Plan out how and when to kill Cladius
+    3. Give up on killing Cladius
+END_PRINT

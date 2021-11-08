@@ -1,0 +1,26 @@
+OPTIONS
+    1 start
+    2 END_ALL
+END_OPTIONS
+
+PRINT_LINES
+    After plotting and plotting, opportunity was thrust upon Hamlet. Yes, there was that thing with the pirates, and England, and also that enemy coming to invade the castle, oh and that fencing duel.
+    But.
+    None of that matters now. It was the Hamlet's best chance to kill Cladius. Also his last.
+    The reign of Cladius was over, and Hamlet laid on the ground poisoned.
+END_PRINT
+
+PRINT_RANDOM
+    "O, I die! The potent poison quite o'ercrows my spirit. I can no longer live and hear the news of this kingdom."
+    "Thou incestuous damned Dane, you art slain. The world is free of you. Now, may my soul reach heaven as I give my final breaths."
+END_PRINT_RANDOM
+
+PRINT_LINES
+    Unfortunately, now that Hamlet is dead, I can tell you no more about this world. Maybe it wasn't as wonderful as I made it out to be. Maybe I just didn't do it justice. 
+    Nevertheless, this is all of the world you have explored. There is nothing left you can dicover about the mysteries that befall this strange place. 
+    However, though this world can't offer much, you may still find meaning in it. You may even discover more about yourself. It is up to you. 
+    Do you wish to continue to explore?
+
+    1. Restart the game
+    2. Finish the game
+END_PRINT

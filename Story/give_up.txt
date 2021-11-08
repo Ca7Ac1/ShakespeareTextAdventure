@@ -1,0 +1,20 @@
+OPTIONS
+    1 start
+    2 END_ALL
+END_OPTIONS
+
+PRINT_LINES
+    Hamlet so badly wanted vengence. Of course it is justifiable to ask him to see if that is the correct option. However, as he continued to second guess himself, another voice telling him he needed to waver in his goals made him lose impetus. Hamlet chose to not continue forword on his journey.
+END_PRINT
+
+PRINT_RANDOM
+    "The poison that hath befallen my life. It continues on, yet it is nothingness."
+    "I've become but a shell. I kept questioning what was right or wrong, and in the end, I couldn't choose either."
+END_PRINT_RANDOM
+
+PRINT_LINES    
+    Hamlet continued to live on, maybe happily depending on how you look at it. His whole life was thrown upside down, and his tragedy never resolved. But, who knows. Is it better to keep fighting fate. 
+
+    1. Restart the game
+    2. Finish the game
+END_PRINT

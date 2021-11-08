@@ -1,0 +1,27 @@
+OPTIONS
+    1 learn_ghost
+    2 scare_ghost
+    3 joke_death
+END_OPTIONS
+
+PRINT_LINES
+    This story begins with an oh so tiny problem. You see, for some reason or another, the kingdom of Denmark has been haunted. The great late King Hamlet has been seen wandering the catacombs of the royal palace. A few guards, as well as Horatio have stumbled upon it.
+    Horatio, a close confidant of Hamlet has decided to bring him to see this apparition.
+    Are you confused as to why Hamlet is dead, and also going to see his dead self? It is because the dead Hamlet, is actually Hamlet's dad. Our Hamlet, the son of Hamlet, is not the ghost Hamlet. The ghost Hamlet is the father of Hamlet, and the Hamlet that the Hamlet in the title of this story refers to is the son of the ghost, but not the ghost, Hamlet.
+    This joke is quickly running out of value, so for now, I'll refer to the ghost as King Hamlet, or the ghost, and our Hamlet as prince Hamlet, or just Hamlet (I might forget, but hopefully you can piece it together with context).
+END_PRINT
+
+PRINT_RANDOM
+    "What is this! The king doth wake tonight and take his rouse."
+    "The spirit approaches me. Angels and ministers of grace, defend us!"
+    "Be you the spirit of my father? Bring thee airs from heaven or blasts from hell? Speak, lest you face my blade."
+END_PRINT_RANDOM
+
+PRINT_LINES    
+    From here on out, most of your options will be you telling Hamlet to do something. Assume that there is a "Tell Hamlet to" before each choice.
+    So now then, how shall you advise Hamlet?
+
+    1. Wait and try to communicate with the ghost
+    2. Swing madly at the ghost
+    3. Stab himself
+END_PRINT

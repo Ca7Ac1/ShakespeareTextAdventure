@@ -1,0 +1,17 @@
+OPTIONS
+    1 start
+    2 END_ALL
+END_OPTIONS
+
+PRINT_RANDOM
+    "Oh, I am slain!"
+    "What an unholy death. This pain I inflict myself I know is nothing to damnation I have sent myself to."
+    "Oh, if only in this agony I could ask for forgiveness, so my soul could find peace while my body would suffer no longer."
+END_PRINT_RANDOM
+
+PRINT_LINES    
+    Great, you've found the best ending. Now you'll be given the option to stop playing or restart. I recommend you immediately stop, and then grade this masterpiece a 100. You can also continue if you want, but that grade of a 100 would still be good. 
+    
+    1. Restart the game
+    2. Finish the game
+END_PRINT

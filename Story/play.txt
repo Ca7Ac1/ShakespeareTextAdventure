@@ -1,0 +1,25 @@
+OPTIONS
+    1 give_up
+    2 decisive
+    3 last_encounter
+END_OPTIONS
+
+PRINT_LINES
+    Despite being told to harden his resolve, Hamlet still needs to make sure whether or not Cladius is truly guilty. To this this, he stages a play, and uses Cladius' reaction to determine if he truly killed the previous king or not.
+END_PRINT
+
+PRINT_RANDOM
+    "I’ll take the ghost’s word for a thousand pound. Upon the scene of the poision, my uncle's guilt was immediately revealed."
+    "Ah yes, his actions revealed all. I have no reason to doubt my fathers apparition. My uncle's guilt is absolute."
+END_PRINT_RANDOM
+
+PRINT_LINES
+    I'll admit, it was a stupid plan that was poorly executed and didn't generate any meaningful information,
+    but.
+    But nothing. It was a bad plan. 
+    What should Hamlet do now?    
+
+    1. Give up
+    2. Kill Cladius right there
+    3. Plot Cladius murder
+END_PRINT
