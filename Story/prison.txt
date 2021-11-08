@@ -20,11 +20,3 @@ PRINT_LINES
     1. Restart the game
     2. Finish the game
 END_PRINT
-
-PRINT_LINES    
-
-    1. Run away from the kingdom
-    2. Continue swinging wildly
-    3. Pray to atone for his sins
-    4. Stab himself
-END_PRINT
