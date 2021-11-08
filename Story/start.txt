@@ -4,7 +4,7 @@ END_OPTIONS
 
 PRINT_LINES
     There is a prince named Hamlet who lived quite a tragic life. Or maybe a happy one. or was it sad? It was probably mundane, if I remember correctly.
-    Well, anyhow. You see, this Hamlet fellow is quite indecisive. And you are probably bored, or have to do this for your job, I won't judge. So how about this, why don't you help Hamlet live out his best, or worst life, and he and I can tell you about the wonderful world of Hamlet.
+    Well, anyhow. You see, this Hamlet fellow is quite indecisive. And you are probably bored, or have to do this for your job, either way I won't judge. So how about this, why don't you help Hamlet live out his best, or worst life, and he and I can tell you about the wonderful world of Hamlet.
     Hamlet will give his speech to you in quotes. In order to help make Hamlet's choices, you will have to type a number and then enter.
 END_PRINT
 
